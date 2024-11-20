@@ -29,7 +29,7 @@ export default function Navbar(props) {
       </ul>
       <div className="form-check form-switch">
         <input className="form-check-input --bs-light-text-emphasis" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-        <label className={`--form-${props.Mode}-text-emphasis`}  htmlFor="flexSwitchCheckDefault">Change Mode</label>
+        <label className={`--form-${props.Mode}-text-emphasis`}  htmlFor="flexSwitchCheckDefault">Mode</label>
       </div>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
