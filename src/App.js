@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react'
 import AboutUs from './Component/AboutUs';
 import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
 
 function App() {
   const [Mode,setMode]=useState("light");
@@ -20,6 +21,7 @@ function App() {
       <div className="container">
         <AboutUs Mode={Mode}/>
       </div>
+      <Footer Mode={Mode}/>
     </body>
     
     </>
