@@ -1,5 +1,4 @@
 import React from 'react';
-import './cssfile/Footer.css';
 export default function Footer(props) {
   return (
     <footer className={`bg-${props}`}>
