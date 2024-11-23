@@ -4,6 +4,7 @@ import AboutUs from './Component/AboutUs';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Alert from './Component/Alert';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [alert,setalert]=useState(null);
@@ -30,13 +31,18 @@ function App() {
   }
   return (
     <>
+    
     <body data-bs-theme={Mode}>
+    <Router>
       <Navbar toggleMode={togglMode} Mode={Mode}/>
       <Alert alert={alert}/>
       <div className="container">
-        <AboutUs Mode={Mode}/>
+      <Routes>
+        <Route path="/about" element={<AboutUs Mode={Mode}/>} />
+      </Routes>
       </div>
       <Footer Mode={Mode}/>
+      </Router>
     </body>
     
     </>
